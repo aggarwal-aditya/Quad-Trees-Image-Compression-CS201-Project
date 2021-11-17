@@ -5,7 +5,7 @@
 - [x] Make header files for Node and coordinates
 - [x] make header and src files for insert 
 - [x] search and other functions
-- [ ] Image mnipulation using quad trees
+- [ ] Image manipulation using quad trees
 
 
 
