@@ -4,9 +4,8 @@
 - [x] Add Project Goals and Scope
 - [x] Make header files for Node and coordinates
 - [x] make header and src files for insert 
-- [ ] search and other functions
-- [ ] Image manipulation using quad trees
-- [ ] Spatial Indexing
+- [x] search and other functions
+- [ ] Image mnipulation using quad trees
 
 
 
