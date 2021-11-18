@@ -1,6 +1,3 @@
-//
-// Created by Aditya Aggarwal on 22-10-2021.
-//
 
 #ifndef test
 #define test
