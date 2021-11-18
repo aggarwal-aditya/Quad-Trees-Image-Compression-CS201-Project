@@ -13,7 +13,7 @@ node* build_quad_tree(){
     	tree->north_east=NULL;
     	tree->south_east=NULL;
     	tree->south_west=NULL;
-    	return tree_node=NULL;
+    	return tree_node;
  }
  
  void add_values(node* q, int *p, int num_rows, int num_cols){
