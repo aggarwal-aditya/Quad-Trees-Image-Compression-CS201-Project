@@ -1,6 +1,9 @@
-#pragma once
+#ifndef qtree_hpp
+#define qtree_hpp
 #include<iostream>
 #include <stdio.h>
+#include <opencv2/highgui.hpp>
+
 using namespace std;
 
 typedef struct node{
@@ -11,7 +14,6 @@ typedef struct node{
 	int left;
 	int bottom;
 	int right;
-	int difference;
 	
        int prows;
        int pcols;
@@ -29,5 +31,7 @@ void split_node(node* q);
 float avg_pxvalue(node* q);
 float pixel_variance(node* q);
 void build_quad_tree(node* root, int var);
-void_make_matrix(node*start, cv::Mat& modified, int total_rows, int total_cols);
-int count_tree_nodes(node* root);
+void make_matrix(node*start, cv::Mat& modified, int total_rows, int total_cols);
+int new_pixels_count(node* root);
+
+#endif
