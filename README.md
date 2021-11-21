@@ -25,7 +25,7 @@ Build and install OpenCV in your machine if you already haven't. Here are guides
 
 ***Recommendation***: Installing OpenCV on windows is a tediuos task and not advised. For easier and quicker installation use Ubuntu(Best Choice) or MacOS(Second Best Choice). If you are on a windows machine, and dont have a Linux distribution installed in your system, you may use a virtual machine.
 
-After installing OpenCV, type ```make``` in your terminal. This will produce an output file test To run this file type ```./test``` in your terminal. 
+After installing OpenCV, type ```make``` in your terminal. This will produce an output file ***test***. To run this file type ```./test``` in your terminal. 
 After this the programme will ask you the path of image which is to compressed. After you enter the required path, it will ask you if you want to proceed with default setting for image variance(a measure for image compression) or want to change it. After providing the required inputs the programme will display the original and compressed file. The compressed file will also be saved with a name ***modified.jpeg*** in the directory where original image was present. 
 
 ---
