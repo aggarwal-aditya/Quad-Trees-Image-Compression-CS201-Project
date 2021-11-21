@@ -4,7 +4,7 @@
 //#include "iostream"
 
 
-#include "Tree.h"
+#include "tree.h"
 
 //A simple function to return |x|
 int absolute_value_fun(int x) {
