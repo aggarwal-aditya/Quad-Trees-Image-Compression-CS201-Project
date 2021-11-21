@@ -7,9 +7,8 @@ To download our program, please copy and paste this line to your terminal:
 ```
 git clone https://github.com/aggarwal-aditya/CS201-Project.git
 ```
-### First you will need to decide if you want to simulate [Region Quad Tree](https://en.wikipedia.org/wiki/Quadtree#Region_quadtree) or [Point Quad Tree](https://en.wikipedia.org/wiki/Quadtree#Point_quadtree):
-Region Quadtree is used for image compression (details can be found in hyperlink in heading) while point QuadTree is used for stroing two dimensional points with their coressponding data values (details can be found in hyperlink in heading).
-To simulate image compression, type ``` cd img_proc ``` in your terminal. To simulate point quad tree, type ``` cd point_quad ``` in your terminal.
+### First you will need to decide if you want to simulate 2D Point Quad Tree or Image Compression Quad Tree:
+To simulate image compression, type ``` cd img_proc ``` in your terminal. To simulate 2D Points quad tree, type ``` cd 2DPoints ``` in your terminal.
 
 ---
 
@@ -25,14 +24,32 @@ Build and install OpenCV in your machine if you already haven't. Here are guides
 
 ***Recommendation***: Installing OpenCV on windows is a tediuos task and not advised. For easier and quicker installation use Ubuntu(Best Choice) or MacOS(Second Best Choice). If you are on a windows machine, and dont have a Linux distribution installed in your system, you may use a virtual machine.
 
-After installing OpenCV, type ```make``` in your terminal. This will produce an output file ***test***. To run this file type ```./test``` in your terminal. 
+***Linux***<br>
+After installing OpenCV, type ```make``` in your terminal. This will produce an output file ***test***. To run this file type ```./test``` in your terminal. If makefile gives error follow the steps mentioned for Windows.
+
+***Windows***<br>
+After installing OpenCV,type the below command in your terminal:
+```
+g++ main.cpp image.cpp image.hpp -o test -std=c++11 `pkg-config --cflags --libs opencv`
+```
+This will generate an output file ***test.exe***. To run this file type ```./test```  or ```./test.exe``` in your terminal.
+### Further Common Steps for any OS
 After this the programme will ask you the path of image which is to compressed. After you enter the required path, it will ask you if you want to proceed with default setting for image variance(a measure for image compression) or want to change it. After providing the required inputs the programme will display the original and compressed file. The compressed file will also be saved with a name ***modified.jpeg*** in the directory where original image was present. 
 
 ---
 
-### Further Steps to run Point Quad Tree
+### Further Steps to run 2D Point Quad Tree
+***Linux***<br>
+Type ```make``` in your terminal. This will produce an output file ***test***. To run this file type ```./test``` in your terminal. If makefile gives error follow the steps mentioned for Windows.
 
-
+***Windows***<br>
+Type the below command in your terminal:
+```
+g++ main.cpp tree.h Node.h coordinates.h -o test -std=c++11
+```
+This will generate an output file ***test.exe***. To run this file type ```./test``` or ```./test.exe``` in your terminal.
+### Further Common Steps for any OS
+After this programme starts and is pretty self explanatory. It gives option to insert point, find point adress and find point data. Please be aware that the current implementation does not support addition of same point multiple times with differnt data_value. Please dont try to do so.
 
 ---
 
