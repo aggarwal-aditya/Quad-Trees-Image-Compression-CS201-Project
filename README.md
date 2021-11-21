@@ -3,6 +3,8 @@
 
 
 # How to use our program?
+[Watch youtube video to view a demo](https://youtu.be/eAPH4_CFyYU)<br>
+Or follow the below instructions<br>
 To download our program, please copy and paste this line to your terminal:
 ```
 git clone https://github.com/aggarwal-aditya/CS201-Project.git
