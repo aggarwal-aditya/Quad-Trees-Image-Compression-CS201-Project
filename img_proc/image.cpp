@@ -34,7 +34,6 @@ void split_node(node * q)
     int left=q->left;
     int bottom=q->bottom;
     int right=q->right;
-    o
     bool noSouth=(top==bottom);
     bool noEast=(left==right);
     
