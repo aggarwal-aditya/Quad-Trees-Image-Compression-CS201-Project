@@ -1,5 +1,4 @@
 make:
-  g++ main.cpp tree.h Node.h coordinates.h -o test -std=c++11
-clean: 
-   rm *.out
-      
+	g++ main.cpp Node.h coordinates.h tree.h -o test -std=c++11 `pkg-config --cflags --libs opencv`
+clean:
+	rm *.out
