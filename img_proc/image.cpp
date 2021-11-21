@@ -1,5 +1,6 @@
 #include "image.hpp"
 
+//Creates a Quad Tree Node
 node* new_node(){
     node * tree_node = new node;
     tree_node->is_leaf=false;
@@ -15,6 +16,7 @@ node* new_node(){
    return tree_node;
  }
  
+//Add pixel values and number of rows and cols in original image
  void add_values(node* q, int *p, int num_rows, int num_cols){
     q->p=p;
     q->prows=num_rows;
@@ -25,13 +27,14 @@ node* new_node(){
     q->right=num_cols-1;
 }
 
+//splits a quad tree node into 4 smaller nodes with corresponding pixel values
 void split_node(node * q)
 {
     int top=q->top;
     int left=q->left;
     int bottom=q->bottom;
     int right=q->right;
-    
+    o
     bool noSouth=(top==bottom);
     bool noEast=(left==right);
     
@@ -121,6 +124,8 @@ float pixel_variance(node* q){
     return dev;
 }
 
+//builds the quad-tree based on the specified maximum pixel value variance
+//splits starting node and successive nodes into child nodes
 void build_quad_tree(node * q, int limit)
 {
     if(q==NULL)//base case or new quad tree
