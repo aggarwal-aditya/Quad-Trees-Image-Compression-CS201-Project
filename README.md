@@ -7,6 +7,10 @@ To download our program, please copy and paste this line to your terminal:
 ```
 git clone https://github.com/aggarwal-aditya/CS201-Project.git
 ```
+Then type
+```
+cd CS201-Project
+```
 ### First you will need to decide if you want to simulate 2D Point Quad Tree or Image Compression Quad Tree:
 To simulate image compression, type ``` cd img_proc ``` in your terminal. To simulate 2D Points quad tree, type ``` cd 2DPoints ``` in your terminal.
 
