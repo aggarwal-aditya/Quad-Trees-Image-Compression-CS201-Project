@@ -7,7 +7,7 @@
 Or follow the below instructions<br>
 To download our program, please copy and paste this line to your terminal:
 ```
-git clone https://github.com/aggarwal-aditya/CS201-Project.git
+git clone https://github.com/aggarwal-aditya/Quad-Trees-Image-Compression-CS201-Project.git
 ```
 Then type
 ```
