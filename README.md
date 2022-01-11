@@ -19,7 +19,7 @@ To simulate image compression, type ``` cd img_proc ``` in your terminal. To sim
 ---
 
 ### Further Steps to run Image Compression
-It is expected that your system has OpenCV library installed (it has been  used for reading and writing images as we cant do this directly in C/C++). If not steps for the same are given below.
+It is expected that your system has OpenCV library installed. If not steps for the same are given below.
 
 ***Steps to install OpenCV***
 
